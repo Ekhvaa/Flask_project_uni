@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+
+<body>
+
+    <form class="box" method="get" >
+        <input type="text" name ="searching" placeholder="Search..." >
+        <img class="search-icon" src="../static/img/search-icon-2048x2048-cmujl7en.png">
+    </form>
+
+    <div>
+        <a href="/home"><button>View Full Site
+                <i class="fa fa-arrow-circle-right"></i>
+            </button>
+        </a>
+    </div>
+    {% with message=get_flashed_messages() %}
+        {% for m in message %}
+            <p>{{ m }}</p>
+        {% endfor %}
+    {% endwith %}
+
+
+    
+</body>
+
+</html>
+

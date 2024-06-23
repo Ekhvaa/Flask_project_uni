@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{%block content%}
+
+<div style="
+    width: 100%;
+    height: calc(100vh - 56px);
+    background-image: url('../static/img/shrek-4k-shrek-the-third-teaser-l8wy7ooxcgulysns.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    
+">
+
+
+<h1 style="margin-top: 100px;">Welcome To Our New Website</h1>
+{% if not session['username'] %}
+<h3 style="margin-top: 10px;">Please Log in to get full access on our Website</h3>
+
+{%endif%}
+
+{%endblock%}
+
+{%block title%}
+<title>Home</title>
+{%endblock%}
+
+
+
+
+    
